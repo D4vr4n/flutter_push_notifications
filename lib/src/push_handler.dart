@@ -94,7 +94,7 @@ class PushHandler {
     }
 
     if (handlerType == MessageHandlerType.onLaunch || handlerType == MessageHandlerType.onResume) {
-      strategy.onBackgroundProcess(message.data);
+      strategy.onBackgroundProcess(message.data, PushNavigatorHolder().navigator);
     }
 
     if (handlerType == MessageHandlerType.onMessage) {
