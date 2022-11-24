@@ -1,6 +1,7 @@
 library notifications;
 
 export 'src/base_messaging_service.dart';
+export 'src/local_notifications_service.dart';
 export 'src/notification_payload.dart';
 export 'src/push_handle_strategy.dart';
 export 'src/push_handle_strategy_factory.dart';
