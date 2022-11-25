@@ -25,6 +25,7 @@ abstract class LocalNotificationsService {
     required bool androidAllowWhileIdle,
     String? payload,
     DateTimeComponents? matchDateTimeComponents,
+    NotificationCallback? onSelectNotification,
   });
 
   Future<void> cancel(int id, {String? tag});
