@@ -31,4 +31,6 @@ abstract class LocalNotificationsService {
   Future<void> cancel(int id, {String? tag});
 
   Future<void> cancelAll();
+
+  Future<List<PendingNotificationRequest>> pending();
 }
